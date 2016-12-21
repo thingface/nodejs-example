@@ -1,7 +1,7 @@
 {
-  "name": "thingface-nodejs-base-client",
+  "name": "thingface-nodejs-example",
   "version": "1.0.0",
-  "description": "Thingface Node JS client example",
+  "description": "Thingface NodeJS Example",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

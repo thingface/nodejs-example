@@ -4,7 +4,7 @@ var _sendRandomSensorValueInterval;
 
 // DEVICE and HOST SETUP
 var THINGFACE_PORT = 8883;
-var THINGFACE_HOST = "xyz-app.thingface.io";
+var THINGFACE_HOST = "xyz.thingface.io";
 var DEVICE_ID = "<enter_device_id>";
 var DEVICE_SECRET = "<enter_device_secret>";
 
@@ -76,7 +76,7 @@ function sendSensorValue(sensorId, sensorValue){
 
 function shutdown(){
     if(client.connected){
-        console.log(DEVICE_ID+" is shutting down..");
+        console.log(DEVICE_ID + " is shutting down..");
         clearInterval(_sendRandomSensorValueInterval);
         client.end();
     }
