@@ -1,0 +1,19 @@
+{
+  "name": "thingface-nodejs-base-client",
+  "version": "1.0.0",
+  "description": "Thingface Node JS client example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "thingface",
+    "client",
+    "mqtt"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^2.1.3"
+  }
+}
