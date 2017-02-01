@@ -6,7 +6,7 @@ Take an inspiration and feel free to clone this repository and modify it as you 
 # How to run
 - Download and install [NodeJS](https://nodejs.org/)
 - Download or clone this repository to your PC
-- Setup `THINGFACE_HOST`, `DEVICE_ID` and `DEVICE_SECRET` in [example.js](../blob/master/example.js)
+- Setup `THINGFACE_HOST`, `DEVICE_ID` and `DEVICE_SECRET` in [example.js](example.js)
 - Inside folder run `npm install` to install all dependencies
 - Run `node example` to finally execute this example
 
