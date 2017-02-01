@@ -17,6 +17,8 @@ var options = {
     clean: true,
     rejectUnauthorized: false
 };
+
+console.log(DEVICE_ID+' is connecting to '+THINGFACE_HOST+'..');
 var client  = mqtt.connect('mqtts://'+THINGFACE_HOST, options);
 
 // Handle 'connect' event
