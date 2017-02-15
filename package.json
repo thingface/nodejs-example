@@ -1,5 +1,5 @@
 {
-  "name": "thingface-nodejs-example",
+  "name": "thingface-js-example",
   "version": "1.0.0",
   "description": "Thingface NodeJS Example",
   "main": "index.js",
@@ -9,11 +9,12 @@
   "keywords": [
     "thingface",
     "client",
-    "mqtt"
+    "mqtt",
+    "iot"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Miroslav Božík",
+  "license": "MIT",
   "dependencies": {
-    "mqtt": "^2.1.3"
+    "thingface": "0.0.1"
   }
 }

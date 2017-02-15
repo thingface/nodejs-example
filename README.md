@@ -8,10 +8,11 @@ Take an inspiration and feel free to clone this repository and modify it as you 
 
 # How to run
 - Download or clone this repository to your PC
-- Setup `THINGFACE_HOST`, `DEVICE_ID` and `DEVICE_SECRET` in [example.js](example.js)
+- Setup *thingface host*, *device ID* and *device secret key* in [example-command.js](example-command.js) or [example-sensor.js](example-sensor.js)
 - Inside folder run `npm install` to install all dependencies
-- Run `node example` to finally execute this example
+- Run `node example-command` or `node example-sensor` to finally execute this example
 
 # More information
-- [GitHub Repositories](https://github.com/thingface "GitHub Repositories")
-- [Thingface Platform Website](http://thingface.io/ "Thingface Platform Website")
+- [GitHub Repositories](https://github.com/thingface)
+- [NPM Package](https://www.npmjs.com/package/thingface)
+- [Thingface Platform Website](http://thingface.io/)
