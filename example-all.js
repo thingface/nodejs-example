@@ -1,5 +1,7 @@
 var thingface = require("thingface");
 
+var sensorInterval;
+
 function commandHandler(senderType, senderId, commandName, commandArgs){
     if (commandName === "say") {
         console.log(commandArgs[0]);
@@ -8,9 +10,23 @@ function commandHandler(senderType, senderId, commandName, commandArgs){
 }
 
 thingface.onConnectionState(function(newState){
+    // 1 - connected
+    // 0 - disconnected
+
     if (newState === 1) { // connected
+        console.log("your device is now connected");
+        sensorInterval = setInterval(sendRandomValueForSensor, 5000);
+        // subscribe commands
         thingface.onCommand(commandHandler);
+    }
+    if (newState === 0) { // disconnected
+        clearInterval(sensorInterval);
     }
 });
 
 thingface.connect("your-device-id", "device-secret-key", "thingface-server-host");
+
+function sendRandomValueForSensor(){
+    var value = Math.random() * 100;
+    thingface.sendSensorValue("s1", value);
+}

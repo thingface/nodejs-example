@@ -15,6 +15,6 @@
   "author": "Miroslav Božík",
   "license": "MIT",
   "dependencies": {
-    "thingface": "0.0.1"
+    "thingface": "^0.0.3"
   }
 }
