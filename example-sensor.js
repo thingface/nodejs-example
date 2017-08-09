@@ -8,17 +8,17 @@ thingface.onConnectionState(function(newState){
 
     if (newState === 1) { // connected
         console.log("your device is now connected");
-        sensorInterval = setInterval(sendRandomValueForSensor, 5000);
+        sensorInterval = setInterval(sendRandomValueForSensor, 6000);
     }
     if (newState === 0) { // disconnected
         clearInterval(sensorInterval);
     }
 });
 
-thingface.connect("your-device-id", "device-secret-key", "thingface-server-host");
+thingface.connect("deviceid", "devicesecretkey");
 
 function sendRandomValueForSensor(){
     var value = Math.random() * 100;
 
-    thingface.sendSensorValue("s1", value);
+    thingface.sendSensorValue("temp", value);
 }

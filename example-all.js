@@ -24,7 +24,7 @@ thingface.onConnectionState(function(newState){
     }
 });
 
-thingface.connect("your-device-id", "device-secret-key", "thingface-server-host");
+thingface.connect("your-device-id", "device-secret-key");
 
 function sendRandomValueForSensor(){
     var value = Math.random() * 100;

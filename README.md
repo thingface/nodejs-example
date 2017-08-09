@@ -8,7 +8,7 @@ Take an inspiration and feel free to clone this repository and modify it as you 
 
 # How to run
 - Download or clone this repository to your PC
-- Setup *device ID*, *device secret key* and *host* in [example-command.js](example-command.js) or [example-sensor.js](example-sensor.js)
+- Setup *device ID*, *device secret key* in [example-command.js](example-command.js) or [example-sensor.js](example-sensor.js)
 - Inside folder run `npm install` to install all dependencies
 - Run `node example-command` or `node example-sensor` to finally execute this example
 

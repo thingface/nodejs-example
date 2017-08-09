@@ -9,8 +9,9 @@ function commandHandler(senderType, senderId, commandName, commandArgs){
 
 thingface.onConnectionState(function(newState){
     if (newState === 1) { // connected
+        console.log("device is connected");
         thingface.onCommand(commandHandler);
     }
 });
 
-thingface.connect("your-device-id", "device-secret-key", "thingface-server-host");
+thingface.connect("deviceid", "devicesecretkey");
